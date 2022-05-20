@@ -1,18 +1,19 @@
 # RESUME App
-### Check out my portfolio and proffesional carrier so far.
+### Check out my portfolio and professional carrier so far.
 
 ---
 #### Content:
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Status](#setup)
-* [Inspiration](#inspiration)
+* [Status](#status)
+* [Inspiration](#inspirations)
 
 ---
 ## General info
-This is supposed to be resume app to share with others. Let's see how it's gonna develop.  
-To begin with I'll focus on front end technologies, as this is what I'm currently dealing at my work. I'm planning to write just a sample back end Spring Boot application with User model to share some data to be displayed in UI.
+This is supposed to be resume app to present myself to the others. Let's see how it's gonna develop.  
+To begin with I'll focus on front end technologies, as this is what I'm currently dealing with at my work.  
+For the moment, I'm planning to write just a simple back end Spring Boot application with User model to share some fixed data to be displayed in UI. When that works I might be interested in extending to CRUD.
 
 ---
 ## Technologies
@@ -25,7 +26,8 @@ To begin with I'll focus on front end technologies, as this is what I'm currentl
 * Other projects: *Lombok*.
 
 FRONT END:
- * to be specified, but I think it will be an Angular project.
+ * Frameworks: *Angular 13.3.6*
+ * Libraries: *Bootstrap 5.2*
 
 ---
 ## Setup
@@ -34,8 +36,10 @@ To be updated.
 ---
 ## Status
 What's ready vs. what will be ready:
-- [ ] Spring Boot application with DB config to store User data (maybe extended to CRUD in the future)
-- [ ] UI (probably Angular app)
+- [x] Spring Boot application with DB config
+- [ ] Model classes
+- [ ] REST controllers
+- [ ] Angular UI (I'll list the features I want to include later on)
 
 ---
 ## Inspirations.
