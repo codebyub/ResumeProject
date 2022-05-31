@@ -1,0 +1,8 @@
+button {
+    margin: 50px;
+}
+
+button:hover {
+    border: 3;
+    border-color: white;
+}

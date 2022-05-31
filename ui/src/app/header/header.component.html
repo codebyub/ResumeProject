@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark mb-0">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="'.'" id="app-name"><img src="../assets/img/logo.png" height="40"
+        class="d-inline-block align-top" alt="">
+      Resume App</a>
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+      &#9776;
+    </button>
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="'/about'" (click)="isMenuCollapsed = true">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/career'" (click)="isMenuCollapsed = true">Career</a>
+        </li>
+        <li class="nav-item dropdown btn-group dropend">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            (click)="isMenuCollapsed = false">Education
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" (click)="isMenuCollapsed = true">
+            <li><a class="dropdown-item" [routerLink]="'/edu/studies'">Studies</a></li>
+            <li><a class="dropdown-item" [routerLink]="'/edu/courses'">Courses</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/hobby'" (click)="isMenuCollapsed = true">Hobby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="isMenuCollapsed = true" data-bs-toggle="offcanvas"
+            data-bs-target="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/comments'" (click)="isMenuCollapsed = true">Comments</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="contact" aria-labelledby="contactForm">
+  <div class="offcanvas-header bg-warning bg-gradient border-top border-success">
+    <h5 class="offcanvas-title" id="contactForm">Looking forward to hearing from you!</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body bg-light">
+    <p>This will be a contact form</p>
+    <div class="float-end">
+      <button type="submit" class="btn btn-outline-dark mb-4 d-md-flex justify-content-md-end">
+        Submit!</button>
+    </div>
+  </div>
+</div>

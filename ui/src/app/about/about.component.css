@@ -1,0 +1,11 @@
+h5 {
+    color: #9b9ea0;
+    padding: 25px 25px 50px 25px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+img {
+    float: right;
+    margin: 10px 5px 15px 25px;
+}

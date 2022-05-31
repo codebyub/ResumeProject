@@ -1,0 +1,13 @@
+.progress {
+    height: 75px;
+}
+
+#not-found-content {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+}
